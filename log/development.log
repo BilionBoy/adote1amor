@@ -18109,3 +18109,20 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 10.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-06-26 22:34:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | GC: 1.5ms)
+Completed 200 OK in 96ms (Views: 59.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 21.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-06-26 22:34:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
