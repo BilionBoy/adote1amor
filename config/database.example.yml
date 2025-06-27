@@ -5,14 +5,14 @@ default: &default
 
 development:
   <<: *default
-  database: adote1amor_development
+  database: adoteamor_development
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
   host: <%= ENV['DB_HOST'] %>
 
 test:
   <<: *default
-  database: adote1amor_test
+  database: adoteamor_test
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
   host: <%= ENV['DB_HOST'] %>
