@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :g_tipo_usuarios
   root 'home#index'
   get 'home/index'
