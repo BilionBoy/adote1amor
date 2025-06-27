@@ -18563,3 +18563,4 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.3ms)
 
 
+  [1m[35m (112.1ms)[0m  [1m[35mCREATE DATABASE "evelynlettering_development" ENCODING = 'unicode'[0m
