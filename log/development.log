@@ -18575,3 +18575,29 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.5ms)
 
 
+  [1m[35m (111.3ms)[0m  [1m[35mCREATE DATABASE "adote1amor_development" ENCODING = 'unicode'[0m
+  [1m[35m (164.3ms)[0m  [1m[35mCREATE DATABASE "adote1amor_development" ENCODING = 'unicode'[0m
+  [1m[35m (82.1ms)[0m  [1m[35mCREATE DATABASE "adote1amor_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2025-06-26 22:59:08 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 1.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-26 23:01:28 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (Could not render layout: undefined local variable or method `current_user' for an instance of HomeController):
+
+Causes:
+NameError (undefined local variable or method `current_user' for an instance of HomeController)
+  
+app/controllers/concerns/layout_by_user.rb:17:in `set_layout_by_user'
