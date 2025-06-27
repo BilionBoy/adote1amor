@@ -19143,3 +19143,315 @@ Processing by LandingController#index as HTML
 Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:45:58 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 27.9ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:48:15 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:48:15 -0400
+Started GET "/img/petlovebanner.png" for 127.0.0.1 at 2025-06-27 08:48:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/petlovebanner.png"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:49:05 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:49:05 -0400
+Started GET "/img/petlovebanner.png" for 127.0.0.1 at 2025-06-27 08:49:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/petlovebanner.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:49:36 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 3.9ms | GC: 1.9ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 5.8ms | GC: 1.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+  
+ActionView::Template::Error (The asset "petlovebanner.png" is not present in the asset pipeline.
+):
+
+Causes:
+Sprockets::Rails::Helper::AssetNotFound (The asset "petlovebanner.png" is not present in the asset pipeline.
+)
+    2:   <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+    3:     <%= link_to root_path, class: "navbar-brand ml-lg-3" do %>
+    4:       <h1 class="m-0 text-uppercase text-primary">
+    5:         <%= image_tag "petlovebanner.png", alt: "Logo", style: "height: 40px; margin-right: 10px" %>
+    6:         Adote 1 Amor
+    7:       </h1>
+    8:     <% end %>
+  
+app/views/shared/landing/_navbar.html.erb:5
+app/views/shared/landing/_navbar.html.erb:3
+app/views/layouts/home_application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:49:56 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.5ms | GC: 0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "layout/assets/img/petlovebanner.png" is not present in the asset pipeline.
+):
+
+Causes:
+Sprockets::Rails::Helper::AssetNotFound (The asset "layout/assets/img/petlovebanner.png" is not present in the asset pipeline.
+)
+    2:   <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+    3:     <%= link_to root_path, class: "navbar-brand ml-lg-3" do %>
+    4:       <h1 class="m-0 text-uppercase text-primary">
+    5:         <%= image_tag "layout/assets/img/petlovebanner.png", alt: "Logo", style: "height: 40px; margin-right: 10px" %>
+    6:         Adote 1 Amor
+    7:       </h1>
+    8:     <% end %>
+  
+app/views/shared/landing/_navbar.html.erb:5
+app/views/shared/landing/_navbar.html.erb:3
+app/views/layouts/home_application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:50:20 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.7ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:50:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:50:35 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 6.8ms | GC: 3.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:50:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:51:49 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:51:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:52:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:52:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 4.6ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:52:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:52:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:52:32 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:52:32 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:52:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 08:54:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/g_admin"):
+  
+Started GET "/rails/info/routes?query=g" for 127.0.0.1 at 2025-06-27 08:54:45 -0400
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"g"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/rails/info/routes?query=g_a" for 127.0.0.1 at 2025-06-27 08:54:45 -0400
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"g_a"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/info/routes?query=g_ad" for 127.0.0.1 at 2025-06-27 08:54:46 -0400
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"g_ad"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 08:55:12 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  

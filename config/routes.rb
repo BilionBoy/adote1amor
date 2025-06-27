@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   # Root
   root 'landing#index'
+  get '/g_admin',         to: 'g_admin#index'
   
   # Rotas Scaffold
   resources :a_eventos_animais
