@@ -1,0 +1,57 @@
+<div class="container">
+  <%= render "shared/notice" %>
+  <div class="card border-0 shadow shadow-sm">
+    <div class="card-header border-0 d-flex justify-content-between">
+      <span class="fs-4">Visualizar A Animal</span>
+    </div>
+    <div class="card-body">
+      <div id="<%= dom_id @a_animal %>">
+          <p>
+            <strong>Nome:</strong>
+            <%= @a_animal.nome %>
+          </p>
+          <p>
+            <strong>Idade:</strong>
+            <%= @a_animal.idade %>
+          </p>
+          <p>
+            <strong>Descricao:</strong>
+            <%= @a_animal.descricao %>
+          </p>
+          <p>
+            <strong>Castrado:</strong>
+            <%= @a_animal.castrado %>
+          </p>
+          <p>
+            <strong>Visto Por Ultimo:</strong>
+            <%= @a_animal.visto_por_ultimo %>
+          </p>
+          <p>
+            <strong>A Especie:</strong>
+            <%= @a_animal.a_especie %>
+          </p>
+          <p>
+            <strong>A Cor:</strong>
+            <%= @a_animal.a_cor %>
+          </p>
+          <p>
+            <strong>A Bairro:</strong>
+            <%= @a_animal.a_bairro %>
+          </p>
+          <p>
+            <strong>A Porte:</strong>
+            <%= @a_animal.a_porte %>
+          </p>
+      </div>
+    </div>
+    <div class="card-footer border-0 d-flex justify-content-between">
+      <div>
+        <%= link_to edit_a_animal_path(@a_animal), class: "btn btn-primary" do %>
+        <i class="bi bi-pencil-square"></i> Editar
+        <% end %>
+        <%= link_to "Voltar", a_animais_path, class: "btn btn-secondary" %>
+      </div>
+      <%= button_to "Deletar", @a_animal, method: :delete, class: "btn btn-outline-danger border-0" %>
+    </div>
+  </div>
+</div>

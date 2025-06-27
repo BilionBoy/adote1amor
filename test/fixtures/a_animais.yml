@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  idade: MyString
+  descricao: MyString
+  castrado: false
+  visto_por_ultimo: 2025-06-26 23:29:35
+  a_especie: one
+  a_cor: one
+  a_bairro: one
+  a_porte: one
+
+two:
+  nome: MyString
+  idade: MyString
+  descricao: MyString
+  castrado: false
+  visto_por_ultimo: 2025-06-26 23:29:35
+  a_especie: two
+  a_cor: two
+  a_bairro: two
+  a_porte: two

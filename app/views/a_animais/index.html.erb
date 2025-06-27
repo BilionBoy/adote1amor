@@ -1,0 +1,105 @@
+<%= render "shared/context_nav", title: t("activerecord.models.#{AAnimal.model_name.i18n_key}.other"), new_path: new_a_animal_path do  %>
+<span class="breadcrumb-item active"><%= t("activerecord.models.#{AAnimal.model_name.i18n_key}.other") %></span>
+<% end %>
+<div class="card">
+  <div class="card-header d-flex">
+    <%= search_form_for @q, html: { class: "d-flex gap-2" , autocomplete: "off"} do |f| %>
+      <%= f.search_field :nome_cont, class: "form-control", placeholder: "Pesquisar" %>
+      <%= f.button(type: 'submit', class: 'btn btn-info') { tag.i(class: 'ph-magnifying-glass') } %>
+      <%= link_to  tag.i(class: 'ph-x-circle'), a_animais_path, class: "btn btn-light" if params[:q] %>
+      <% end %>
+    </div>
+    <div class="card-body">
+      <div class= "table-responsive">
+        <table class="table table-sm table-bordered table-striped">
+          <thead>
+            <tr>
+              <th class="text-center">Ações</th>
+              
+                
+                  <th><%= sort_link(@q, :nome, t("activerecord.attributes.a_animal.nome")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :idade, t("activerecord.attributes.a_animal.idade")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :descricao, t("activerecord.attributes.a_animal.descricao")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :castrado, t("activerecord.attributes.a_animal.castrado")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :visto_por_ultimo, t("activerecord.attributes.a_animal.visto_por_ultimo")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :a_especie, t("activerecord.attributes.a_animal.a_especie")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :a_cor, t("activerecord.attributes.a_animal.a_cor")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :a_bairro, t("activerecord.attributes.a_animal.a_bairro")) %></th>
+                
+                
+                  <th><%= sort_link(@q, :a_porte, t("activerecord.attributes.a_animal.a_porte")) %></th>
+                
+            </tr>
+          </thead>
+          <tbody>
+            <% @a_animais.each do |a_animal| %>
+            <tr>
+              <td class="text-center">
+                <div class="dropdown-toggle">
+                  <a href="#" class="text-body dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ph-gear"></i>
+                  </a>
+                  <div class="dropdown-menu" style="">
+                    <div class="dropdown-header">Opções</div>
+                    <%= link_to edit_a_animal_path(a_animal), class: "dropdown-item" do %>
+                    <i class="ph-pen me-2"></i> Editar
+                    <% end %>
+                    <%= form_for a_animal, method: :delete do |f| %>
+                    <a class="dropdown-item hand-pointer " data-confirm-delete="<%= a_animal_path(a_animal) %>" data-csrf-token="<%= form_authenticity_token %>">
+                      <i class="ph-trash-simple me-2"></i>Excluir
+                    </a>
+                    <% end %>
+                      
+                        <td><%= a_animal.nome %></td>
+                      
+                      
+                        <td><%= a_animal.idade %></td>
+                      
+                      
+                        <td><%= a_animal.descricao %></td>
+                      
+                      
+                        <td><%= a_animal.castrado %></td>
+                      
+                      
+                        <td><%= a_animal.visto_por_ultimo %></td>
+                      
+                      
+                        <td><%= a_animal.a_especie %></td>
+                      
+                      
+                        <td><%= a_animal.a_cor %></td>
+                      
+                      
+                        <td><%= a_animal.a_bairro %></td>
+                      
+                      
+                        <td><%= a_animal.a_porte %></td>
+                      
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card-footer">
+      <%= pagy_bootstrap_nav(@pagy, link_extra: 'class="btn btn-outline-secondary btn-sm mx-1"').html_safe %>
+    </div>
+  </div>

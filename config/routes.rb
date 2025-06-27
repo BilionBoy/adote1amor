@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :a_eventos_animais
+  resources :a_animais
+  resources :a_especies
+  resources :a_portes
+  resources :a_bairros
+  resources :a_cor
+  resources :a_status
+  resources :a_tipo_eventos
   root 'home#index'
   get 'home/index'
 
