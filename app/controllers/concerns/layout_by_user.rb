@@ -19,7 +19,7 @@
 #      when 'ADMIN'
 #        "application"
 #      when 'TUTOR'
-#        "tutor_application"
+#        "home_application"
 #      else
 #        "application"
 #      end

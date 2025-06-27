@@ -1,0 +1,37 @@
+<div class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+    <%= link_to root_path, class: "navbar-brand ml-lg-3" do %>
+      <h1 class="m-0 text-uppercase text-primary">
+        <%= image_tag "/layout/assets/img/petlovebanner.png", alt: "Logo", style: "height: 40px; margin-right: 10px" %>
+        Adote 1 Amor
+      </h1>
+    <% end %>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+      <div class="navbar-nav mx-auto py-0">
+        <%= link_to "Início",           root_path,    class: "nav-item nav-link active" %>
+        <%= link_to "Eventos",          root_path,    class: "nav-item nav-link" %>
+        <%= link_to "Adote um Pet",     root_path,    class: "nav-item nav-link" %>
+        <%= link_to "Pets Perdidos",    root_path,    class: "nav-item nav-link" %>
+        <%= link_to "Contato",          root_path,    class: "nav-item nav-link" %>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Páginas
+          </a>
+          <div class="dropdown-menu m-0">
+            <%= link_to "Course Detail", root_path,    class: "dropdown-item" %>
+            <%= link_to "Our Features",  root_path,    class: "dropdown-item" %>
+            <%= link_to "Instructors",   root_path,    class: "dropdown-item" %>
+            <%= link_to "Testimonial",   root_path,    class: "dropdown-item" %>
+          </div>
+        </div>
+      </div>
+      <%= link_to g_admin_path, class: "btn btn-primary py-2 px-4 d-none d-lg-block rounded-pill shadow-sm btn-animated-icon", style: "transition: all 0.3s ease-in-out; font-size: 1.2rem" do %>
+        <span class="me-2" style="display: inline-block; animation: bounce 2s infinite">🐱</span>
+        Entrar
+      <% end %>
+    </div>
+  </nav>
+</div>

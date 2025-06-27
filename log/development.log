@@ -18975,3 +18975,949 @@ Migrating to DeviseCreateUsers (20250627122329)
   [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:40:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 9.3ms | GC: 8.2ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 59.0ms | GC: 10.7ms)
+Completed 200 OK in 147ms (Views: 62.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 26.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:40:54 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:42:34 -0400
+  
+ArgumentError (Before process_action callback :authenticate_user! has not been defined):
+  
+app/controllers/landing_controller.rb:3:in `<class:LandingController>'
+app/controllers/landing_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:42:43 -0400
+Processing by LandingController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template layouts/home_application with {:locale=>[:"pt-BR", :pt], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder, :axlsx]}.
+
+Searched in:
+  * "/home/dhiogo/Projetos/repos/adote1amor/app/views"
+  * "/home/dhiogo/.asdf/installs/ruby/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views"
+  * "/home/dhiogo/.asdf/installs/ruby/3.3.5/lib/ruby/gems/3.3.0/gems/turbo-rails-2.0.11/app/views"
+  * "/home/dhiogo/.asdf/installs/ruby/3.3.5/lib/ruby/gems/3.3.0/gems/actiontext-7.2.2.1/app/views"
+  * "/home/dhiogo/.asdf/installs/ruby/3.3.5/lib/ruby/gems/3.3.0/gems/actionmailbox-7.2.2.1/app/views"
+):
+  
+actionview (7.2.2.1) lib/action_view/path_set.rb:42:in `find'
+actionview (7.2.2.1) lib/action_view/lookup_context.rb:131:in `find'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:102:in `resolve_layout'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:109:in `resolve_layout'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:89:in `find_layout'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:72:in `render_with_layout'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:59:in `render_template'
+actionview (7.2.2.1) lib/action_view/renderer/template_renderer.rb:11:in `render'
+actionview (7.2.2.1) lib/action_view/renderer/renderer.rb:58:in `render_template_to_object'
+actionview (7.2.2.1) lib/action_view/renderer/renderer.rb:31:in `render_to_object'
+actionview (7.2.2.1) lib/action_view/rendering.rb:135:in `block in _render_template'
+actionview (7.2.2.1) lib/action_view/base.rb:308:in `in_rendering_context'
+actionview (7.2.2.1) lib/action_view/rendering.rb:134:in `_render_template'
+actionpack (7.2.2.1) lib/action_controller/metal/streaming.rb:258:in `_render_template'
+actionview (7.2.2.1) lib/action_view/rendering.rb:121:in `render_to_body'
+actionpack (7.2.2.1) lib/action_controller/metal/rendering.rb:186:in `render_to_body'
+actionpack (7.2.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (7.2.2.1) lib/abstract_controller/rendering.rb:29:in `render'
+actionpack (7.2.2.1) lib/action_controller/metal/rendering.rb:167:in `render'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block (2 levels) in render'
+benchmark (0.4.0) lib/benchmark.rb:323:in `realtime'
+activesupport (7.2.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in render'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:101:in `cleanup_view_runtime'
+activerecord (7.2.2.1) lib/active_record/railties/controller_runtime.rb:46:in `cleanup_view_runtime'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:31:in `render'
+wicked_pdf (2.8.2) lib/wicked_pdf/pdf_helper.rb:18:in `render'
+actionpack (7.2.2.1) lib/action_controller/metal/implicit_render.rb:39:in `default_render'
+actionpack (7.2.2.1) lib/action_controller/metal/basic_implicit_render.rb:9:in `send_action'
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:226:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/rendering.rb:193:in `process_action'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:261:in `block in process_action'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+turbo-rails (2.0.11) lib/turbo-rails.rb:24:in `with_request_id'
+turbo-rails (2.0.11) app/controllers/concerns/turbo/request_id_tracking.rb:10:in `turbo_tracking_request_id'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+actiontext (7.2.2.1) lib/action_text/rendering.rb:25:in `with_renderer'
+actiontext (7.2.2.1) lib/action_text/engine.rb:71:in `block (4 levels) in <class:Engine>'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.2.2.1) lib/abstract_controller/callbacks.rb:260:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/rescue.rb:27:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:77:in `block in process_action'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `block in instrument'
+activesupport (7.2.2.1) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.2.2.1) lib/active_support/notifications.rb:210:in `instrument'
+actionpack (7.2.2.1) lib/action_controller/metal/instrumentation.rb:76:in `process_action'
+actionpack (7.2.2.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.2.2.1) lib/active_record/railties/controller_runtime.rb:39:in `process_action'
+actionpack (7.2.2.1) lib/abstract_controller/base.rb:163:in `process'
+actionview (7.2.2.1) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (7.2.2.1) lib/action_controller/metal.rb:335:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:67:in `dispatch'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:50:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:53:in `block in serve'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:133:in `block in find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `each'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:126:in `find_routes'
+actionpack (7.2.2.1) lib/action_dispatch/journey/router.rb:34:in `serve'
+actionpack (7.2.2.1) lib/action_dispatch/routing/route_set.rb:896:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (3.1.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.1.8) lib/rack/etag.rb:29:in `call'
+rack (3.1.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.1.8) lib/rack/head.rb:15:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/http/content_security_policy.rb:38:in `call'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.0) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:674:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:43:26 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:45:58 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 27.9ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:48:15 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:48:15 -0400
+Started GET "/img/petlovebanner.png" for 127.0.0.1 at 2025-06-27 08:48:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/petlovebanner.png"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:49:05 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:49:05 -0400
+Started GET "/img/petlovebanner.png" for 127.0.0.1 at 2025-06-27 08:49:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/petlovebanner.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:49:36 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 3.9ms | GC: 1.9ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 5.8ms | GC: 1.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.9ms)
+
+
+  
+ActionView::Template::Error (The asset "petlovebanner.png" is not present in the asset pipeline.
+):
+
+Causes:
+Sprockets::Rails::Helper::AssetNotFound (The asset "petlovebanner.png" is not present in the asset pipeline.
+)
+    2:   <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+    3:     <%= link_to root_path, class: "navbar-brand ml-lg-3" do %>
+    4:       <h1 class="m-0 text-uppercase text-primary">
+    5:         <%= image_tag "petlovebanner.png", alt: "Logo", style: "height: 40px; margin-right: 10px" %>
+    6:         Adote 1 Amor
+    7:       </h1>
+    8:     <% end %>
+  
+app/views/shared/landing/_navbar.html.erb:5
+app/views/shared/landing/_navbar.html.erb:3
+app/views/layouts/home_application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:49:56 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.5ms | GC: 0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "layout/assets/img/petlovebanner.png" is not present in the asset pipeline.
+):
+
+Causes:
+Sprockets::Rails::Helper::AssetNotFound (The asset "layout/assets/img/petlovebanner.png" is not present in the asset pipeline.
+)
+    2:   <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+    3:     <%= link_to root_path, class: "navbar-brand ml-lg-3" do %>
+    4:       <h1 class="m-0 text-uppercase text-primary">
+    5:         <%= image_tag "layout/assets/img/petlovebanner.png", alt: "Logo", style: "height: 40px; margin-right: 10px" %>
+    6:         Adote 1 Amor
+    7:       </h1>
+    8:     <% end %>
+  
+app/views/shared/landing/_navbar.html.erb:5
+app/views/shared/landing/_navbar.html.erb:3
+app/views/layouts/home_application.html.erb:22
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:50:20 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.7ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:50:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:50:35 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 6.8ms | GC: 3.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:50:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:51:49 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:51:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:52:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:52:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:52:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 4.6ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:52:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:52:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:52:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:52:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:52:32 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:52:32 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:52:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 08:54:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/g_admin"):
+  
+Started GET "/rails/info/routes?query=g" for 127.0.0.1 at 2025-06-27 08:54:45 -0400
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"g"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/rails/info/routes?query=g_a" for 127.0.0.1 at 2025-06-27 08:54:45 -0400
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"g_a"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/rails/info/routes?query=g_ad" for 127.0.0.1 at 2025-06-27 08:54:46 -0400
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"query"=>"g_ad"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.5ms)
+
+
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 08:55:12 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:55:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:56:52 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:56:52 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:56:52 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:56:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:56:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:56:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:56:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 08:57:00 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.1ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 08:58:14 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:58:15 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 1.3ms | GC: 0.1ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 8.2ms | GC: 0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 08:58:15 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 08:58:15 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 08:58:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/img/adoteofc.jpeg" for 127.0.0.1 at 2025-06-27 08:58:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 08:58:16 -0400
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 08:58:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 08:58:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 08:59:12 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `search_path' for an instance of #<Class:0x000074bb23e9f518>):
+
+Causes:
+NameError (undefined local variable or method `search_path' for an instance of #<Class:0x000074bb23e9f518>)
+    50:             <i class="fas fa-search text-danger me-2"></i>
+    51:             Encontre seu Companheiro
+    52:           </h4>
+    53:           <%= form_with url: search_path, method: :get, local: true do |f| %>
+    54:             <div class="row g-3">
+    55:               <div class="col-12">
+    56:                 <%= f.select :tipo_animal, options_for_select([["Tipo de Animal", ""], ["🐕 Cachorro", "cachorro"], ["🐱 Gato", "gato"], ["🐰 Coelho", "coelho"], ["🐦 Pássaro", "passaro"]]), {}, class: "form-select search-input col-12" %>
+  
+app/views/shared/landing/_hero.html.erb:53
+app/views/landing/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:00:05 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `search_path' for an instance of #<Class:0x000074bb23e98f38>):
+
+Causes:
+NameError (undefined local variable or method `search_path' for an instance of #<Class:0x000074bb23e98f38>)
+    50:             <i class="fas fa-search text-danger me-2"></i>
+    51:             Encontre seu Companheiro
+    52:           </h4>
+    53:           <%= form_with url: search_path, method: :get, local: true do |f| %>
+    54:             <div class="row g-3">
+    55:               <div class="col-12">
+    56:                 <%= f.select :tipo_animal, options_for_select([["Tipo de Animal", ""], ["🐕 Cachorro", "cachorro"], ["🐱 Gato", "gato"], ["🐰 Coelho", "coelho"], ["🐦 Pássaro", "passaro"]]), {}, class: "form-select search-input col-12" %>
+  
+app/views/shared/landing/_hero.html.erb:53
+app/views/landing/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:00:15 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.1ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:00:15 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:00:15 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:00:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:00:16 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:00:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:00:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 4.0ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:00:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:01:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.7ms | GC: 0.1ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.9ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:02:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 09:02:07 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:02:46 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:02:46 -0400
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:02:46 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:02:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:02:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:02:47 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:02:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 09:03:10 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.4ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:03:48 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.3ms | GC: 0.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:03:48 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:03:48 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:03:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:03:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/img/adoteofc.jpeg" for 127.0.0.1 at 2025-06-27 09:03:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:03:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:03:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:05:12 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:05:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:05:12 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:05:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/img/adoteofc.jpeg" for 127.0.0.1 at 2025-06-27 09:05:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:05:13 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:05:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:05:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-27 09:05:14 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-27 09:05:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
