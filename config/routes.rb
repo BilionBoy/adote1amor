@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :g_tipo_usuarios
-  root 'home#index'
-  get 'home/index'
+  # Root
+  root 'landing#index'
   
   # Rotas Scaffold
   resources :a_eventos_animais
@@ -13,7 +12,9 @@ Rails.application.routes.draw do
   resources :a_cor
   resources :a_status
   resources :a_tipo_eventos
-
+  resources :g_tipo_usuarios
+  
   # Can be used by load balancers and uptime monitors to verify that the app is live.
+  get 'home/index'
   get 'up' => 'rails/health#show', as: :rails_health_check
 end
