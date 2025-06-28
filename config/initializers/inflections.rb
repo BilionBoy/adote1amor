@@ -3,7 +3,7 @@
 ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'a_tipo_evento', 'a_tipo_eventos'
   inflect.irregular 'a_status', 'a_status'
-  inflect.irregular 'a_cor', 'a_cor'
+  inflect.irregular 'a_cor', 'a_cores'
   inflect.irregular 'a_bairro', 'a_bairros'
   inflect.irregular 'a_porte', 'a_portes'
   inflect.irregular 'a_especie', 'a_especies'
