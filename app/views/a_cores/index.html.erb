@@ -1,7 +1,5 @@
-<%= render "shared/context_nav", title: t("activerecord.models.#{ACor.model_name.i18n_key}.other"), new_path: new_a_cor_path do  %>
-  <span class="breadcrumb-item active"><%= t("activerecord.models.#{ACor.model_name.i18n_key}.other") %></span>
-<% end %>
-<div class="card">
+
+<div class="card " >
   <div class="card-header d-flex">
     <%= search_form_for @q, html: { class: "d-flex gap-2" , autocomplete: "off"} do |f| %>
       <%= f.search_field :descricao_cont, class: "form-control", placeholder: "Pesquisar" %>
