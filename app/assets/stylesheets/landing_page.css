@@ -38,7 +38,6 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
-
 *,
 *::before,
 *::after {
@@ -10215,7 +10214,7 @@ h6,
 }
 .jumbotron,
 .jumbotron.page-header {
-  background: url("../img/adoteofc.jpeg") no-repeat center center;
+  background: url("/layout/assets/img/adoteofc.jpeg") no-repeat top center;
   background-size: cover;
   background-position: top center;
   background-attachment: scroll;
