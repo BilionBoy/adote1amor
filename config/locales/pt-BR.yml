@@ -11,42 +11,20 @@ pt-BR:
 
   activerecord:
     models:
-      funcao:
-        one: "Função"
-        other: "Funções"
-      estabelecimento:
-        one: "Estabelecimento"
-        other: "Estabelecimentos"
-      user_estabelecimento:
-        one: "Usuário Estabelecimento"
-        other: "Usuários Estabelecimentos"
-      categoria:
-        one: "Categoria"
-        other: "Categorias"
-      produto:
-        one: "Produto"
-        other: "Produtos"
+      a_especie:
+        one: "Espécie"
+        other: "Espécies"
+      a_status:
+        one: "Status"
+        other: "Status"
+      a_porte:
+        one: "Porte"
+        other: "Portes"
     attributes:
-      funcao:
-        nome: "Nome"
+      a_especie:
         descricao: "Descrição"
-      estabelecimento:
-        nome: "Nome"
-        cnpj: "CNPJ"
-        endereco: "Endereço"
-        telefone: "Telefone"
-      user_estabelecimento:
-        nome: "Usuário"
-        estabelecimento: "Estabelecimento"
-      categoria:
-        nome: "Nome"
+      a_status:
         descricao: "Descrição"
-      produto:
-        nome: "Nome"
-        descricao: "Descrição"
-        preco: "Preço"
-        categoria: "Categoria"
-        quantidade_estoque: "Quantidade em Estoque"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"

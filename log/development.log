@@ -19921,3 +19921,1121 @@ ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.car
   
 ActionController::RoutingError (No route matches [GET] "/js/main.js"):
   
+Started GET "/" for 127.0.0.1 at 2025-06-28 10:21:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20250627122329_devise_create_users.rb
+
+
+):
+  
+activerecord (7.2.2.1) lib/active_record/migration.rb:756:in `check_pending_migrations'
+activerecord (7.2.2.1) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.2.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.2.1) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.2.1) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-06-28 10:21:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 1 pending migration:
+
+db/migrate/20250627122329_devise_create_users.rb
+
+
+):
+  
+activerecord (7.2.2.1) lib/active_record/migration.rb:756:in `check_pending_migrations'
+activerecord (7.2.2.1) lib/active_record/migration.rb:663:in `block (2 levels) in call'
+activesupport (7.2.2.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.2.2.1) lib/active_record/migration.rb:668:in `block in call'
+activerecord (7.2.2.1) lib/active_record/migration.rb:660:in `synchronize'
+activerecord (7.2.2.1) lib/active_record/migration.rb:660:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (7.2.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (7.2.2.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (7.2.2.1) lib/rails/rack/logger.rb:29:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/request_id.rb:33:in `call'
+rack (3.1.8) lib/rack/method_override.rb:28:in `call'
+rack (3.1.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.2.2.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (7.2.2.1) lib/rails/engine.rb:535:in `call'
+puma (6.5.0) lib/puma/configuration.rb:279:in `call'
+puma (6.5.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.5.0) lib/puma/thread_pool.rb:389:in `with_force_shutdown'
+puma (6.5.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.5.0) lib/puma/server.rb:468:in `process_client'
+puma (6.5.0) lib/puma/server.rb:249:in `block in run'
+puma (6.5.0) lib/puma/thread_pool.rb:166:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to DeviseCreateUsers (20250627122329)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "nome" character varying, "telefone" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627122329') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 92.5ms | GC: 1.6ms)
+Completed 200 OK in 99ms (Views: 93.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-28 10:21:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-28 10:21:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/img/adoteofc.jpeg" for 127.0.0.1 at 2025-06-28 10:21:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-06-28 10:21:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-28 10:21:40 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 3.6ms | GC: 1.3ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | GC: 1.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-28 10:21:42 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-28 10:21:42 -0400
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-28 10:21:42 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-28 10:21:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-28 10:21:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-28 10:21:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-28 10:21:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 7.3ms | GC: 3.6ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.6ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/img/adoteofc.jpeg" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-28 10:29:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-28 10:29:19 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-28 10:29:21 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-28 10:29:21 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-28 10:29:21 -0400
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-28 10:29:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-28 10:29:22 -0400
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-28 10:29:22 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-28 10:29:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-28 10:29:52 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | GC: 0.1ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.1ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:29:53 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.1ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 6.1ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | GC: 0.2ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | GC: 0.4ms)
+Completed 200 OK in 36ms (Views: 12.2ms | ActiveRecord: 15.7ms (2 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:30:58 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.1ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_especies/new" for 127.0.0.1 at 2025-06-28 10:30:59 -0400
+Processing by AEspeciesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered a_especies/_form.html.erb (Duration: 22.3ms | GC: 1.2ms)
+  Rendered a_especies/new.html.erb within layouts/application (Duration: 23.0ms | GC: 1.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | GC: 1.6ms)
+Completed 200 OK in 36ms (Views: 28.0ms | ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 2.1ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:31:01 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.2ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:32:40 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.2ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 5.0ms | GC: 0.5ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | GC: 0.8ms)
+Completed 200 OK in 55ms (Views: 10.8ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.1ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+Started GET "/lib/easing/easing.min.js" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/img/adoteofc.jpeg" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/lib/counterup/counterup.min.js" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for 127.0.0.1 at 2025-06-28 10:32:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/g_admin" for 127.0.0.1 at 2025-06-28 10:32:42 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.4ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:32:46 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.1ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.1ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.6ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:33:04 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.2ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 8.9ms | GC: 4.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | GC: 5.1ms)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 5.1ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:33:08 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.1ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 2.4ms | GC: 0.5ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.5ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/a_portes" for 127.0.0.1 at 2025-06-28 10:33:09 -0400
+Processing by APortesController#index as HTML
+  [1m[36mAPorte Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_portes"[0m
+  ↳ app/controllers/a_portes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_portes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mAPorte Load (0.1ms)[0m  [1m[34mSELECT "a_portes".* FROM "a_portes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_portes/index.html.erb:25
+  Rendered a_portes/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | GC: 0.6ms)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 2.0ms (2 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/a_especies" for 127.0.0.1 at 2025-06-28 10:33:10 -0400
+Processing by AEspeciesController#index as HTML
+  [1m[36mAEspecie Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_especies"[0m
+  ↳ app/controllers/a_especies_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_especies/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAEspecie Load (0.1ms)[0m  [1m[34mSELECT "a_especies".* FROM "a_especies" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_especies/index.html.erb:25
+  Rendered a_especies/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | GC: 1.4ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 1.4ms)
+
+
+Started GET "/a_portes" for 127.0.0.1 at 2025-06-28 10:33:10 -0400
+Processing by APortesController#index as HTML
+  [1m[36mAPorte Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_portes"[0m
+  ↳ app/controllers/a_portes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_portes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mAPorte Load (0.1ms)[0m  [1m[34mSELECT "a_portes".* FROM "a_portes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_portes/index.html.erb:25
+  Rendered a_portes/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.4ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_portes" for 127.0.0.1 at 2025-06-28 10:33:24 -0400
+Processing by APortesController#index as HTML
+  [1m[36mAPorte Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_portes"[0m
+  ↳ app/controllers/a_portes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_portes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mAPorte Load (0.2ms)[0m  [1m[34mSELECT "a_portes".* FROM "a_portes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_portes/index.html.erb:25
+  Rendered a_portes/index.html.erb within layouts/application (Duration: 3.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"a_cor"}, missing required keys: [:id]):
+
+Causes:
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"a_cor"}, missing required keys: [:id])
+    64:       </ul>
+    65:        <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+    66:         <li class="nav-item"></li>
+    67:           <a href="<%= a_cor_path %>" class="nav-link" id="config-link" data-no-close>
+    68:             <i class="ph-paint-brush-household"></i>
+    69:             <span>Cor</span>
+    70:           </a>
+  
+app/views/shared/sidebar/_sidebar.html.erb:67
+app/views/layouts/application.html.erb:42
+Started GET "/a_portes" for 127.0.0.1 at 2025-06-28 10:34:32 -0400
+Processing by APortesController#index as HTML
+  [1m[36mAPorte Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_portes"[0m
+  ↳ app/controllers/a_portes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_portes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mAPorte Load (0.2ms)[0m  [1m[34mSELECT "a_portes".* FROM "a_portes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_portes/index.html.erb:25
+  Rendered a_portes/index.html.erb within layouts/application (Duration: 3.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | GC: 0.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="sidebar sidebar-dark sidebar-main sidebar-expand-xl" style="background: #121212;">
+  <div class="sidebar-content">
+    <div class="sidebar-section">
+      <div class="sidebar-section-body d-flex justify-content-center">
+        <h5 class="sidebar-resize-hide flex-grow-1 my-auto"><b>Menu</b></h5>
+        <div>
+          <button
+            type="button"
+            class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-xl-none"
+          >
+            <i class="ph-x"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Barra de pesquisa -->
+    <div class="sidebar-section-body">
+      <div class="form-control-feedback form-control-feedback-end">
+        <input
+          type="search"
+          id="sidebar-search-input"
+          class="form-control"
+          placeholder="Pesquisar"
+          onkeyup="filterSidebar()"
+        />
+        <div class="form-control-feedback-icon">
+          <i class="ph-magnifying-glass opacity-50"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Itens da sidebar -->
+    <div class="sidebar-section">
+      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+        <li class="nav-item"></li>
+          <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
+            <i class="ph-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+      </ul>
+     <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+        <li class="nav-item"></li>
+          <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
+            <i class="ph-bookmarks"></i>
+            <span>Publicações</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+        <li class="nav-item"></li>
+          <a href="<%= a_especies_path %>" class="nav-link" id="config-link" data-no-close>
+            <i class="ph-dog"></i>
+            <span>Espécies</span>
+          </a>
+        </li>
+      </ul>
+       <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+        <li class="nav-item"></li>
+          <a href="<%= a_portes_path %>" class="nav-link" id="config-link" data-no-close>
+            <i class="ph-align-right"></i>
+            <span>Porte</span>
+          </a>
+        </li>
+      </ul>
+       <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+        <li class="nav-item"></li>
+          <a href="<%=<%= a_cor_index_path %> %>" class="nav-link" id="config-link" data-no-close>
+            <i class="ph-paint-brush-household"></i>
+            <span>Cor</span>
+          </a>
+        </li>
+      </ul>
+       <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+        <li class="nav-item"></li>
+          <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
+            <i class="ph-buildings"></i>
+            <span>Bairros</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <script>
+    function filterSidebar() {
+      const input = document.getElementById('sidebar-search-input');
+      const filter = input.value.toLowerCase();
+      const navItems = document.querySelectorAll('#sidebar-items .nav-item, #sidebar-items .nav-item-header');
+
+      navItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const isCollapsible = item.querySelector('.nav-group-sub');
+
+        if (text.includes(filter)) {
+          item.style.display = ''; // Mostra o item
+          if (isCollapsible) {
+            isCollapsible.classList.add('show'); // Abre a seção colapsável
+          }
+        } else {
+          item.style.display = 'none'; // Oculta o item
+        }
+      });
+    }
+  </script>
+):
+
+Causes:
+ActiveSupport::SyntaxErrorProxy (/home/dhiogo/projetos/github/adote1amor/app/views/shared/sidebar/_sidebar.html.erb:67: syntax error, unexpected '<'
+...reeze; @output_buffer.append=(<%= a_cor_index_path ); @outpu...
+...                              ^
+/home/dhiogo/projetos/github/adote1amor/app/views/shared/sidebar/_sidebar.html.erb:107: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+)
+1:    <div class="sidebar sidebar-dark sidebar-main sidebar-expand-xl" style="background: #121212;">
+2:      <div class="sidebar-content">
+3:        <div class="sidebar-section">
+4:          <div class="sidebar-section-body d-flex justify-content-center">
+5:            <h5 class="sidebar-resize-hide flex-grow-1 my-auto"><b>Menu</b></h5>
+6:            <div>
+7:              <button
+8:                type="button"
+9:                class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-xl-none"
+10:              >
+11:                <i class="ph-x"></i>
+12:              </button>
+13:            </div>
+14:          </div>
+15:        </div>
+16:        <!-- Barra de pesquisa -->
+17:        <div class="sidebar-section-body">
+18:          <div class="form-control-feedback form-control-feedback-end">
+19:            <input
+20:              type="search"
+21:              id="sidebar-search-input"
+22:              class="form-control"
+23:              placeholder="Pesquisar"
+24:              onkeyup="filterSidebar()"
+25:            />
+26:            <div class="form-control-feedback-icon">
+27:              <i class="ph-magnifying-glass opacity-50"></i>
+28:            </div>
+29:          </div>
+30:        </div>
+31:        <!-- Itens da sidebar -->
+32:        <div class="sidebar-section">
+33:          <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+34:            <li class="nav-item"></li>
+35:              <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
+36:                <i class="ph-house"></i>
+37:                <span>Home</span>
+38:              </a>
+39:            </li>
+40:          </ul>
+41:         <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+42:            <li class="nav-item"></li>
+43:              <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
+44:                <i class="ph-bookmarks"></i>
+45:                <span>Publicações</span>
+46:              </a>
+47:            </li>
+48:          </ul>
+49:          <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+50:            <li class="nav-item"></li>
+51:              <a href="<%= a_especies_path %>" class="nav-link" id="config-link" data-no-close>
+52:                <i class="ph-dog"></i>
+53:                <span>Espécies</span>
+54:              </a>
+55:            </li>
+56:          </ul>
+57:           <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+58:            <li class="nav-item"></li>
+59:              <a href="<%= a_portes_path %>" class="nav-link" id="config-link" data-no-close>
+60:                <i class="ph-align-right"></i>
+61:                <span>Porte</span>
+62:              </a>
+63:            </li>
+64:          </ul>
+65:           <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+66:            <li class="nav-item"></li>
+67:              <a href="<%=<%= a_cor_index_path %> %>" class="nav-link" id="config-link" data-no-close>
+68:                <i class="ph-paint-brush-household"></i>
+69:                <span>Cor</span>
+70:              </a>
+71:            </li>
+72:          </ul>
+73:           <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+74:            <li class="nav-item"></li>
+75:              <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
+76:                <i class="ph-buildings"></i>
+77:                <span>Bairros</span>
+78:              </a>
+79:            </li>
+80:          </ul>
+81:        </div>
+82:      </div>
+83:    </div>
+84:    
+85:      <script>
+86:        function filterSidebar() {
+87:          const input = document.getElementById('sidebar-search-input');
+88:          const filter = input.value.toLowerCase();
+89:          const navItems = document.querySelectorAll('#sidebar-items .nav-item, #sidebar-items .nav-item-header');
+90:    
+91:          navItems.forEach(item => {
+92:            const text = item.textContent.toLowerCase();
+93:            const isCollapsible = item.querySelector('.nav-group-sub');
+94:    
+95:            if (text.includes(filter)) {
+96:              item.style.display = ''; // Mostra o item
+97:              if (isCollapsible) {
+98:                isCollapsible.classList.add('show'); // Abre a seção colapsável
+99:              }
+100:            } else {
+101:              item.style.display = 'none'; // Oculta o item
+102:            }
+103:          });
+104:        }
+105:      </script>
+  
+app/views/shared/sidebar/_sidebar.html.erb:67: syntax error, unexpected '<'
+app/views/shared/sidebar/_sidebar.html.erb:107: syntax error, unexpected `end', expecting ')'
+app/views/layouts/application.html.erb:42
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (70.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_development"[0m
+  [1m[35m (54.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_test"[0m
+  [1m[35m (141.5ms)[0m  [1m[35mCREATE DATABASE "adoteamor_development" ENCODING = 'unicode'[0m
+  [1m[35m (51.0ms)[0m  [1m[35mCREATE DATABASE "adoteamor_test" ENCODING = 'unicode'[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-06-28 14:35:51.598857', '2025-06-28 14:35:51.598860') RETURNING "key"[0m
+Migrating to CreateATipoEventos (20250627031632)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "a_tipo_eventos" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031632') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAStatus (20250627031716)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "a_status" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031716') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateACor (20250627031734)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "a_cor" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031734') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateABairros (20250627031804)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "a_bairros" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031804') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAPortes (20250627031816)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "a_portes" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031816') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAEspecies (20250627031827)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "a_especies" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031827') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAAnimais (20250627032935)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "a_animais" ("id" bigserial primary key, "nome" character varying, "idade" character varying, "descricao" character varying, "castrado" boolean, "visto_por_ultimo" timestamp(6), "a_especie_id" bigint, "a_cor_id" bigint, "a_bairro_id" bigint, "a_porte_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_1a543d957a"
+FOREIGN KEY ("a_especie_id")
+  REFERENCES "a_especies" ("id")
+, CONSTRAINT "fk_rails_6116d75751"
+FOREIGN KEY ("a_cor_id")
+  REFERENCES "a_cores" ("id")
+, CONSTRAINT "fk_rails_c3b03b9650"
+FOREIGN KEY ("a_bairro_id")
+  REFERENCES "a_bairros" ("id")
+, CONSTRAINT "fk_rails_dab0ecac02"
+FOREIGN KEY ("a_porte_id")
+  REFERENCES "a_portes" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE DATABASE "adoteamor_development" ENCODING = 'unicode'[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE DATABASE "adoteamor_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to CreateAAnimais (20250627032935)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "a_animais" ("id" bigserial primary key, "nome" character varying, "idade" character varying, "descricao" character varying, "castrado" boolean, "visto_por_ultimo" timestamp(6), "a_especie_id" bigint, "a_cor_id" bigint, "a_bairro_id" bigint, "a_porte_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_1a543d957a"
+FOREIGN KEY ("a_especie_id")
+  REFERENCES "a_especies" ("id")
+, CONSTRAINT "fk_rails_6116d75751"
+FOREIGN KEY ("a_cor_id")
+  REFERENCES "a_cor" ("id")
+, CONSTRAINT "fk_rails_c3b03b9650"
+FOREIGN KEY ("a_bairro_id")
+  REFERENCES "a_bairros" ("id")
+, CONSTRAINT "fk_rails_dab0ecac02"
+FOREIGN KEY ("a_porte_id")
+  REFERENCES "a_portes" ("id")
+)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_especie_id" ON "a_animais" ("a_especie_id")[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_cor_id" ON "a_animais" ("a_cor_id")[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_bairro_id" ON "a_animais" ("a_bairro_id")[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_porte_id" ON "a_animais" ("a_porte_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627032935') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAEventosAnimais (20250627033256)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "a_eventos_animais" ("id" bigserial primary key, "a_animal_id" bigint, "a_tipo_evento_id" bigint, "a_status_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_e0793480e1"
+FOREIGN KEY ("a_animal_id")
+  REFERENCES "a_animais" ("id")
+, CONSTRAINT "fk_rails_480cf135e1"
+FOREIGN KEY ("a_tipo_evento_id")
+  REFERENCES "a_tipo_eventos" ("id")
+, CONSTRAINT "fk_rails_73cacb322b"
+FOREIGN KEY ("a_status_id")
+  REFERENCES "a_status" ("id")
+)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_a_eventos_animais_on_a_animal_id" ON "a_eventos_animais" ("a_animal_id")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_a_eventos_animais_on_a_tipo_evento_id" ON "a_eventos_animais" ("a_tipo_evento_id")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE INDEX "index_a_eventos_animais_on_a_status_id" ON "a_eventos_animais" ("a_status_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627033256') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGTipoUsuarios (20250627040620)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "g_tipo_usuarios" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627040620') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20250627122329)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "nome" character varying, "telefone" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627122329') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2025-06-28 10:42:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 77.5ms | GC: 17.0ms)
+Completed 200 OK in 121ms (Views: 81.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 17.0ms)
+
+
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/img/adoteofc.jpeg" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/favicon.ico" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:43:30 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.2ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:43:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:43:55 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.2ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:43:55 -0400
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:43:55 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:43:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:43:56 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:43:56 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:43:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:44:26 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 4.1ms | GC: 0.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/img/adoteofc.jpeg" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:45:30 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.4ms | GC: 0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:45:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
