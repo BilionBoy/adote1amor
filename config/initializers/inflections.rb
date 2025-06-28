@@ -11,4 +11,6 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
   inflect.irregular 'a_animal', 'a_animais'
   inflect.irregular 'g_tipo_usuario', 'g_tipo_usuarios'
   inflect.irregular 'a_evento_animal', 'a_eventos_animais'
+  inflect.irregular 'a_cidade', 'a_cidades'
+  inflect.irregular 'a_estado', 'a_estados'
 end

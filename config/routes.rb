@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :a_sexo_animals
+  resources :a_cidades
+  resources :a_estados
   devise_for :users
   # Root
   root 'landing#index'
@@ -10,7 +13,7 @@ Rails.application.routes.draw do
   resources :a_especies
   resources :a_portes
   resources :a_bairros
-  resources :a_cor
+  resources :a_cores
   resources :a_status
   resources :a_tipo_eventos
   resources :g_tipo_usuarios

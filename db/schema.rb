@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
+ActiveRecord::Schema[7.2].define(version: 2025_06_28_150247) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -29,10 +29,12 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "a_sexo_id", null: false
     t.index ["a_bairro_id"], name: "index_a_animais_on_a_bairro_id"
     t.index ["a_cor_id"], name: "index_a_animais_on_a_cor_id"
     t.index ["a_especie_id"], name: "index_a_animais_on_a_especie_id"
     t.index ["a_porte_id"], name: "index_a_animais_on_a_porte_id"
+    t.index ["a_sexo_id"], name: "index_a_animais_on_a_sexo_id"
   end
 
   create_table "a_bairros", force: :cascade do |t|
@@ -42,9 +44,22 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "a_cidade_id", null: false
+    t.index ["a_cidade_id"], name: "index_a_bairros_on_a_cidade_id"
   end
 
-  create_table "a_cor", force: :cascade do |t|
+  create_table "a_cidades", force: :cascade do |t|
+    t.string "descricao"
+    t.bigint "a_estado_id"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["a_estado_id"], name: "index_a_cidades_on_a_estado_id"
+  end
+
+  create_table "a_cores", force: :cascade do |t|
     t.string "descricao"
     t.string "created_by"
     t.string "updated_by"
@@ -55,6 +70,16 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
 
   create_table "a_especies", force: :cascade do |t|
     t.string "descricao"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "a_estados", force: :cascade do |t|
+    t.string "descricao"
+    t.string "uf"
     t.string "created_by"
     t.string "updated_by"
     t.datetime "deleted_at"
@@ -78,6 +103,16 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
 
   create_table "a_portes", force: :cascade do |t|
     t.string "descricao"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "a_sexos", force: :cascade do |t|
+    t.string "descricao"
+    t.string "sigla"
     t.string "created_by"
     t.string "updated_by"
     t.datetime "deleted_at"
@@ -127,9 +162,11 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
   end
 
   add_foreign_key "a_animais", "a_bairros"
-  add_foreign_key "a_animais", "a_cor"
+  add_foreign_key "a_animais", "a_cores"
   add_foreign_key "a_animais", "a_especies"
   add_foreign_key "a_animais", "a_portes"
+  add_foreign_key "a_animais", "a_sexos"
+  add_foreign_key "a_bairros", "a_cidades"
   add_foreign_key "a_eventos_animais", "a_animais"
   add_foreign_key "a_eventos_animais", "a_status"
   add_foreign_key "a_eventos_animais", "a_tipo_eventos"
