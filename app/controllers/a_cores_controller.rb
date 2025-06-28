@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class ACorController < ApplicationController
+class ACoresController < ApplicationController
   before_action :set_a_cor, only: %i[show edit update destroy]
 
   rescue_from ActiveRecord::RecordNotFound, with: :handle_not_found
