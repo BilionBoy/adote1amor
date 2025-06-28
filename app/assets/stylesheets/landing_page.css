@@ -10551,7 +10551,7 @@ h6,
       rgba(40, 120, 235, 0.05),
       rgba(40, 120, 235, 0.05)
     ),
-    url(../img/bg-image.jpg);
+    url(/layout/assets/img/bg-image.jpg);
   background-attachment: fixed;
 }
 
