@@ -35,6 +35,9 @@ pt-BR:
       a_animal:
         one: "Animal"
         other: "Animais"
+      g_tipo_usuario:
+        one: "Tipo de Usuário"
+        other: "Tipos de Usuários"
     attributes:
       a_especie:
         descricao: "Descrição"
@@ -43,7 +46,7 @@ pt-BR:
       a_porte:
         descricao: "Descrição"
       a_cor:
-        descricao: "Descrição"  
+        descricao: "Descrição"
       a_raca:
         descricao: "Descrição"
       a_tipo_evento:
@@ -52,17 +55,18 @@ pt-BR:
         descricao: "Descrição"
         data_evento: "Data do Evento"
       a_animal:
-        nome:                "Nome"
-        idade:               "Idade"
-        descricao:           "Descrição"
-        castrado:            "Castrado"
-        sexo:                "Sexo"
-        visto_por_ultimo:    "Visto por Último em:"
-        a_especie:           "Espécie"
-        a_status:            "Status"
-        a_porte:             "Porte"
-        a_cor:               "Cor"
-
+        nome: "Nome"
+        idade: "Idade"
+        descricao: "Descrição"
+        castrado: "Castrado"
+        sexo: "Sexo"
+        visto_por_ultimo: "Visto por Último em:"
+        a_especie: "Espécie"
+        a_status: "Status"
+        a_porte: "Porte"
+        a_cor: "Cor"
+      g_tipo_usuario:
+        descricao: "Descrição"
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"
