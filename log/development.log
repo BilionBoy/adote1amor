@@ -21039,3 +21039,382 @@ ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.car
   
 ActionController::RoutingError (No route matches [GET] "/js/main.js"):
   
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (5010.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (5014.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_development"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (5013.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_development"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (58.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_development"[0m
+  [1m[35m (74.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "adoteamor_test"[0m
+  [1m[35m (52.1ms)[0m  [1m[35mCREATE DATABASE "adoteamor_development" ENCODING = 'unicode'[0m
+  [1m[35m (55.3ms)[0m  [1m[35mCREATE DATABASE "adoteamor_test" ENCODING = 'unicode'[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (3.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-06-28 14:48:13.336435', '2025-06-28 14:48:13.336438') RETURNING "key"[0m
+Migrating to CreateATipoEventos (20250627031632)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "a_tipo_eventos" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031632') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAStatus (20250627031716)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "a_status" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031716') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateACores (20250627031734)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "a_cores" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031734') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateABairros (20250627031804)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "a_bairros" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031804') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAPortes (20250627031816)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "a_portes" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031816') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAEspecies (20250627031827)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "a_especies" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627031827') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAAnimais (20250627032935)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "a_animais" ("id" bigserial primary key, "nome" character varying, "idade" character varying, "descricao" character varying, "castrado" boolean, "visto_por_ultimo" timestamp(6), "a_especie_id" bigint, "a_cor_id" bigint, "a_bairro_id" bigint, "a_porte_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_1a543d957a"
+FOREIGN KEY ("a_especie_id")
+  REFERENCES "a_especies" ("id")
+, CONSTRAINT "fk_rails_6116d75751"
+FOREIGN KEY ("a_cor_id")
+  REFERENCES "a_cores" ("id")
+, CONSTRAINT "fk_rails_c3b03b9650"
+FOREIGN KEY ("a_bairro_id")
+  REFERENCES "a_bairros" ("id")
+, CONSTRAINT "fk_rails_dab0ecac02"
+FOREIGN KEY ("a_porte_id")
+  REFERENCES "a_portes" ("id")
+)[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_especie_id" ON "a_animais" ("a_especie_id")[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_cor_id" ON "a_animais" ("a_cor_id")[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_bairro_id" ON "a_animais" ("a_bairro_id")[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE INDEX "index_a_animais_on_a_porte_id" ON "a_animais" ("a_porte_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627032935') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAEventosAnimais (20250627033256)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "a_eventos_animais" ("id" bigserial primary key, "a_animal_id" bigint, "a_tipo_evento_id" bigint, "a_status_id" bigint, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_e0793480e1"
+FOREIGN KEY ("a_animal_id")
+  REFERENCES "a_animais" ("id")
+, CONSTRAINT "fk_rails_480cf135e1"
+FOREIGN KEY ("a_tipo_evento_id")
+  REFERENCES "a_tipo_eventos" ("id")
+, CONSTRAINT "fk_rails_73cacb322b"
+FOREIGN KEY ("a_status_id")
+  REFERENCES "a_status" ("id")
+)[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE INDEX "index_a_eventos_animais_on_a_animal_id" ON "a_eventos_animais" ("a_animal_id")[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE INDEX "index_a_eventos_animais_on_a_tipo_evento_id" ON "a_eventos_animais" ("a_tipo_evento_id")[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE INDEX "index_a_eventos_animais_on_a_status_id" ON "a_eventos_animais" ("a_status_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627033256') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateGTipoUsuarios (20250627040620)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "g_tipo_usuarios" ("id" bigserial primary key, "descricao" character varying, "created_by" character varying, "updated_by" character varying, "deleted_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627040620') RETURNING "version"[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20250627122329)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "nome" character varying, "telefone" character varying, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250627122329') RETURNING "version"[0m
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2025-06-28 10:48:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 66.8ms | GC: 20.6ms)
+Completed 200 OK in 78ms (Views: 69.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 20.6ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:48:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:48:32 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:48:32 -0400
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:48:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:48:32 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:48:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/img/adoteofc.jpeg" for ::1 at 2025-06-28 10:48:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/g_admin" for ::1 at 2025-06-28 10:48:33 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | GC: 1.2ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | GC: 2.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `a_cores_path' for an instance of #<Class:0x0000735a02249da0>):
+
+Causes:
+NameError (undefined local variable or method `a_cores_path' for an instance of #<Class:0x0000735a02249da0>)
+    64:       </ul>
+    65:        <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+    66:         <li class="nav-item"></li>
+    67:           <a href="<%= a_cores_path %>" class="nav-link" id="config-link" data-no-close>
+    68:             <i class="ph-paint-brush-household"></i>
+    69:             <span>Cor</span>
+    70:           </a>
+  
+app/views/shared/sidebar/_sidebar.html.erb:67
+app/views/layouts/application.html.erb:42
+Started GET "/g_admin" for ::1 at 2025-06-28 10:48:41 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 1.9ms | GC: 1.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 1.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `a_cores_path' for an instance of #<Class:0x0000735a02249da0>):
+
+Causes:
+NameError (undefined local variable or method `a_cores_path' for an instance of #<Class:0x0000735a02249da0>)
+    64:       </ul>
+    65:        <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
+    66:         <li class="nav-item"></li>
+    67:           <a href="<%= a_cores_path %>" class="nav-link" id="config-link" data-no-close>
+    68:             <i class="ph-paint-brush-household"></i>
+    69:             <span>Cor</span>
+    70:           </a>
+  
+app/views/shared/sidebar/_sidebar.html.erb:67
+app/views/layouts/application.html.erb:42
+Started GET "/g_admin" for ::1 at 2025-06-28 10:48:42 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | GC: 0.1ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/g_admin" for ::1 at 2025-06-28 10:48:43 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/g_admin" for ::1 at 2025-06-28 10:48:43 -0400
+Processing by GAdminController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering g_admin/index.html.erb within layouts/application
+  Rendered g_admin/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/a_portes" for ::1 at 2025-06-28 10:48:44 -0400
+Processing by APortesController#index as HTML
+  [1m[36mAPorte Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_portes"[0m
+  ↳ app/controllers/a_portes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_portes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  [1m[36mAPorte Load (0.1ms)[0m  [1m[34mSELECT "a_portes".* FROM "a_portes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_portes/index.html.erb:25
+  Rendered a_portes/index.html.erb within layouts/application (Duration: 6.9ms | GC: 0.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | GC: 0.4ms)
+Completed 200 OK in 27ms (Views: 10.6ms | ActiveRecord: 13.0ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/a_cores" for ::1 at 2025-06-28 10:48:44 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:17 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:56 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:57 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:57 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:57 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:58 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:58 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:49:58 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_portes" for ::1 at 2025-06-28 10:50:01 -0400
+Processing by APortesController#index as HTML
+  [1m[36mAPorte Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_portes"[0m
+  ↳ app/controllers/a_portes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_portes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mAPorte Load (0.2ms)[0m  [1m[34mSELECT "a_portes".* FROM "a_portes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_portes/index.html.erb:25
+  Rendered a_portes/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.6ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | GC: 1.0ms)
+Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 1.9ms (2 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/a_cores" for ::1 at 2025-06-28 10:50:02 -0400
+  
+ActionController::RoutingError (uninitialized constant ACoresController):
+
+Causes:
+ActionDispatch::MissingController (uninitialized constant ACoresController)
+NameError (uninitialized constant ACoresController)
+  
+Started GET "/a_cores" for ::1 at 2025-06-28 10:50:13 -0400
+Processing by ACoresController#index as HTML
+  [1m[36mACor Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "a_cores"[0m
+  ↳ app/controllers/a_cores_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering a_cores/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mACor Load (0.1ms)[0m  [1m[34mSELECT "a_cores".* FROM "a_cores" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/a_cores/index.html.erb:25
+  Rendered a_cores/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 1.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+

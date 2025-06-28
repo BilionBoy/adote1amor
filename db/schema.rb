@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "a_cor", force: :cascade do |t|
+  create_table "a_cores", force: :cascade do |t|
     t.string "descricao"
     t.string "created_by"
     t.string "updated_by"
@@ -127,7 +127,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_27_122329) do
   end
 
   add_foreign_key "a_animais", "a_bairros"
-  add_foreign_key "a_animais", "a_cor"
+  add_foreign_key "a_animais", "a_cores"
   add_foreign_key "a_animais", "a_especies"
   add_foreign_key "a_animais", "a_portes"
   add_foreign_key "a_eventos_animais", "a_animais"
