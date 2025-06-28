@@ -20,11 +20,49 @@ pt-BR:
       a_porte:
         one: "Porte"
         other: "Portes"
+      a_cor:
+        one: "Cor"
+        other: "Cores"
+      a_raca:
+        one: "Raça"
+        other: "Raças"
+      a_tipo_evento:
+        one: "Tipo de Evento"
+        other: "Tipos de Eventos"
+      a_evento_animal:
+        one: "Evento de Animal"
+        other: "Eventos de Animais"
+      a_animal:
+        one: "Animal"
+        other: "Animais"
     attributes:
       a_especie:
         descricao: "Descrição"
       a_status:
         descricao: "Descrição"
+      a_porte:
+        descricao: "Descrição"
+      a_cor:
+        descricao: "Descrição"  
+      a_raca:
+        descricao: "Descrição"
+      a_tipo_evento:
+        descricao: "Descrição"
+      a_evento_animal:
+        descricao: "Descrição"
+        data_evento: "Data do Evento"
+      a_animal:
+        nome:                "Nome"
+        idade:               "Idade"
+        descricao:           "Descrição"
+        castrado:            "Castrado"
+        sexo:                "Sexo"
+        visto_por_ultimo:    "Visto por Último"
+        a_especie:           "Espécie"
+        a_status:            "Status"
+        a_porte:             "Porte"
+        a_cor:               "Cor"
+
     errors:
       messages:
         record_invalid: "A validação falhou: %{errors}"
