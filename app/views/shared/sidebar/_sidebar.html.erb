@@ -7,35 +7,26 @@
         <i class="ph-x"></i>
       </button>
     </div>
-
     <!-- Barra de pesquisa -->
     <div class="px-3 py-2 border-bottom">
       <div class="position-relative">
-        <input
-          type="search"
-          id="sidebar-search-input"
-          class="form-control bg-white ps-4"
-          placeholder="Pesquisar..."
-          onkeyup="filterSidebar()"
-        />
+        <input type="search" id="sidebar-search-input" class="form-control bg-white ps-4" placeholder="Pesquisar..." onkeyup="filterSidebar()"/>
         <i class="ph-magnifying-glass position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"></i>
       </div>
     </div>
-
     <!-- Lista de navegação -->
     <ul class="nav flex-column pt-2 px-2" id="sidebar-items">
       <% sidebar_items = [
-        { path: root_path, icon: 'ph-house', label: 'Home' },
-        { path: root_path, icon: 'ph-bookmarks', label: 'Publicações' },
-        { path: a_especies_path, icon: 'ph-dog', label: 'Espécies' },
-        { path: a_portes_path, icon: 'ph-align-right', label: 'Porte' },
-        { path: a_cores_path, icon: 'ph-paint-brush-household', label: 'Cor' },
-        { path: a_bairros_path, icon: 'ph-buildings', label: 'Bairros' },
-        { path: a_estados_path, icon: 'ph-map-pin', label: 'Estados' },
-        { path: a_cidades_path, icon: 'ph-map-pin-line', label: 'Cidades' },
-        { path: usuarios_g_admin_index_path, icon: 'ph-users', label: 'Usuários' }
+        { path: root_path,                   icon: 'ph-house',                 label: 'Home' },
+        { path: root_path,                   icon: 'ph-bookmarks',             label: 'Publicações' },
+        { path: a_especies_path,             icon: 'ph-dog',                   label: 'Espécies' },
+        { path: a_portes_path,               icon: 'ph-align-right',           label: 'Porte' },
+        { path: a_cores_path,                icon: 'ph-paint-brush-household', label: 'Cor' },
+        { path: a_bairros_path,              icon: 'ph-buildings',             label: 'Bairros' },
+        { path: a_estados_path,              icon: 'ph-map-pin',               label: 'Estados' },
+        { path: a_cidades_path,              icon: 'ph-map-pin-line',          label: 'Cidades' },
+        { path: usuarios_g_admin_index_path, icon: 'ph-users',                 label: 'Usuários' }
       ] %>
-
       <% sidebar_items.each do |item| %>
         <li class="nav-item">
           <%= link_to item[:path],
@@ -48,7 +39,6 @@
     </ul>
   </div>
 </div>
-
 <style>
   .sidebar-link:hover {
     background-color: #e2e6ea;
@@ -65,7 +55,6 @@
     font-size: 1.1rem;
   }
 </style>
-
 <script>
   function filterSidebar() {
     const input = document.getElementById('sidebar-search-input');

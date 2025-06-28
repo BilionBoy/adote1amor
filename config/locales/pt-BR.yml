@@ -17,6 +17,9 @@ pt-BR:
       a_status:
         one: "Status"
         other: "Status"
+      a_bairro:
+        one: "Bairro"
+        other: "Bairros"
       a_porte:
         one: "Porte"
         other: "Portes"
@@ -35,6 +38,15 @@ pt-BR:
       a_animal:
         one: "Animal"
         other: "Animais"
+      a_estado:
+        one: "Estado"
+        other: "Estados"
+      a_cidade:
+        one: "Cidade"
+        other: "Cidades"
+      user:
+        one: "Usuário"
+        other: "Usuários"
       g_tipo_usuario:
         one: "Tipo de Usuário"
         other: "Tipos de Usuários"
