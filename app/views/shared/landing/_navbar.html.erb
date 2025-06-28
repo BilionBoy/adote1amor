@@ -28,12 +28,29 @@
           </div>
         </div>
       </div>
-      <div class="d-flex ">
-        <button class="btn btn-primary py-2 px-4 d-none d-lg-block rounded-pill shadow-sm " data-bs-toggle="modal" data-bs-target="#loginModal" style="font-size: 1.2rem">
-          <span class="me-2">🐱</span>
-          Entrar
-        </button>
-      </div>
+      <% if user_signed_in? %>
+        <div class="dropdown">
+          <button class="btn btn-primary rounded-pill d-none d-lg-block dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <%= current_user.email.split('@').first %>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+            <% if current_user.g_tipo_usuario.descricao == "ADMIN" %>
+              <li><%= link_to "Minha Conta", g_admin_path, class: "dropdown-item" %></li>
+            <% elsif current_user.g_tipo_usuario.nome == "CLIENTE" %>
+              <li><%= link_to "Meus Pedidos", g_admin_meus_pedidos_path, class: "dropdown-item" %></li>
+            <% end %>
+            <li><hr class="dropdown-divider"></li>
+            <%= button_to "Sair", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </ul>
+        </div>
+      <% else %>
+        <div class="d-flex ">
+          <button class="btn btn-primary py-2 px-4 d-none d-lg-block rounded-pill shadow-sm " data-bs-toggle="modal" data-bs-target="#loginModal" style="font-size: 1.2rem">
+            <span class="me-2">🐱</span>
+            Entrar
+          </button>
+        </div>
+      <% end %>
     </div>
   </nav>
 </div>

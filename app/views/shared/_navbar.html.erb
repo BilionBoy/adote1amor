@@ -6,7 +6,6 @@
         <i class="ph-list fs-4"></i>
       </button>
     </div>
-
     <!-- Logo -->
     <div class="navbar-brand d-flex align-items-center gap-3 py-0">
       <%= link_to root_path, class: 'd-flex align-items-center text-white text-decoration-none' do %>
@@ -14,7 +13,6 @@
         <img src="/layout/assets/img/BannerAdote.png" alt="Adote" style="height: 40px;">
       <% end %>
     </div>
-
     <!-- Usuário / Logout -->
     <ul class="navbar-nav ms-auto align-items-center">
       <li class="nav-item dropdown nav-item-dropdown-lg position-relative">
@@ -22,7 +20,6 @@
           <i class="ph-user-circle fs-4"></i>
           <span class="d-none d-xl-inline text-white">Olá, Dhiogo</span>
         </a>
-
         <div id="userMenu" class="custom-dropdown-menu">
           <%= button_to '<i class="ph-sign-out me-2"></i>Sair'.html_safe,
               destroy_user_session_path,
@@ -33,7 +30,6 @@
     </ul>
   </div>
 </div>
-
 <style>
   .custom-dropdown-menu {
     display: none;
@@ -73,7 +69,6 @@
     text-decoration: none;
   }
 </style>
-
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const userMenuToggle = document.getElementById('userMenuToggle');
