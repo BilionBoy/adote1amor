@@ -1,128 +1,80 @@
-<div class="sidebar sidebar-dark sidebar-main sidebar-expand-xl" style="background: #121212;">
+<div class="sidebar sidebar-light sidebar-main sidebar-expand-xl shadow-sm" style="background-color: #f8f9fa;">
   <div class="sidebar-content">
-    <div class="sidebar-section">
-      <div class="sidebar-section-body d-flex justify-content-center">
-        <h5 class="sidebar-resize-hide flex-grow-1 my-auto"><b>Menu</b></h5>
-        <div>
-          <button
-            type="button"
-            class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-xl-none">
-            <i class="ph-x"></i>
-          </button>
-        </div>
-      </div>
+    <!-- Cabeçalho da sidebar -->
+    <div class="sidebar-section border-bottom px-3 py-3 d-flex justify-content-between align-items-center">
+      <h5 class="mb-0 text-dark fw-semibold">Menu</h5>
+      <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sidebar-mobile-main-toggle d-xl-none">
+        <i class="ph-x"></i>
+      </button>
     </div>
+
     <!-- Barra de pesquisa -->
-    <div class="sidebar-section-body">
-      <div class="form-control-feedback form-control-feedback-end">
+    <div class="px-3 py-2 border-bottom">
+      <div class="position-relative">
         <input
           type="search"
           id="sidebar-search-input"
-          class="form-control"
-          placeholder="Pesquisar"
+          class="form-control bg-white ps-4"
+          placeholder="Pesquisar..."
           onkeyup="filterSidebar()"
         />
-        <div class="form-control-feedback-icon">
-          <i class="ph-magnifying-glass opacity-50"></i>
-        </div>
+        <i class="ph-magnifying-glass position-absolute top-50 start-0 translate-middle-y ms-2 text-muted"></i>
       </div>
     </div>
-    <!-- Itens da sidebar -->
-    <div class="sidebar-section">
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-house"></i>
-            <span>Home</span>
-          </a>
+
+    <!-- Lista de navegação -->
+    <ul class="nav flex-column pt-2 px-2" id="sidebar-items">
+      <% sidebar_items = [
+        { path: root_path, icon: 'ph-house', label: 'Home' },
+        { path: root_path, icon: 'ph-bookmarks', label: 'Publicações' },
+        { path: a_especies_path, icon: 'ph-dog', label: 'Espécies' },
+        { path: a_portes_path, icon: 'ph-align-right', label: 'Porte' },
+        { path: a_cores_path, icon: 'ph-paint-brush-household', label: 'Cor' },
+        { path: a_bairros_path, icon: 'ph-buildings', label: 'Bairros' },
+        { path: a_estados_path, icon: 'ph-map-pin', label: 'Estados' },
+        { path: a_cidades_path, icon: 'ph-map-pin-line', label: 'Cidades' },
+        { path: usuarios_g_admin_index_path, icon: 'ph-users', label: 'Usuários' }
+      ] %>
+
+      <% sidebar_items.each do |item| %>
+        <li class="nav-item">
+          <%= link_to item[:path],
+            class: "nav-link d-flex align-items-center gap-2 px-3 py-2 rounded text-dark sidebar-link #{current_page?(item[:path]) ? 'active-link' : ''}" do %>
+            <i class="<%= item[:icon] %> text-primary"></i>
+            <span><%= item[:label] %></span>
+          <% end %>
         </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= root_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-bookmarks"></i>
-            <span>Publicações</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= a_especies_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-dog"></i>
-            <span>Espécies</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= a_portes_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-align-right"></i>
-            <span>Porte</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= a_cores_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-paint-brush-household"></i>
-            <span>Cor</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= a_bairros_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-buildings"></i>
-            <span>Bairros</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= a_estados_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-buildings"></i>
-            <span>Estados</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= a_cidades_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-buildings"></i>
-            <span>Cidades</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav nav-sidebar" data-nav-type="accordion" id="sidebar-items">
-        <li class="nav-item"></li>
-          <a href="<%= usuarios_g_admin_index_path %>" class="nav-link" id="config-link" data-no-close>
-            <i class="ph-buildings"></i>
-            <span>Usuários</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+      <% end %>
+    </ul>
   </div>
 </div>
 
-  <script>
-    function filterSidebar() {
-      const input = document.getElementById('sidebar-search-input');
-      const filter = input.value.toLowerCase();
-      const navItems = document.querySelectorAll('#sidebar-items .nav-item, #sidebar-items .nav-item-header');
+<style>
+  .sidebar-link:hover {
+    background-color: #e2e6ea;
+    text-decoration: none;
+  }
 
-      navItems.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        const isCollapsible = item.querySelector('.nav-group-sub');
+  .active-link {
+    background-color: #dee2e6 !important;
+    border-left: 4px solid #0d6efd;
+    font-weight: 600;
+  }
 
-        if (text.includes(filter)) {
-          item.style.display = ''; // Mostra o item
-          if (isCollapsible) {
-            isCollapsible.classList.add('show'); // Abre a seção colapsável
-          }
-        } else {
-          item.style.display = 'none'; // Oculta o item
-        }
-      });
-    }
-  </script>
+  .nav-link i {
+    font-size: 1.1rem;
+  }
+</style>
+
+<script>
+  function filterSidebar() {
+    const input = document.getElementById('sidebar-search-input');
+    const filter = input.value.toLowerCase();
+    const navItems = document.querySelectorAll('#sidebar-items .nav-item');
+
+    navItems.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(filter) ? '' : 'none';
+    });
+  }
+</script>
