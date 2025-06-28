@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'users/registrations', sessions: 'users/sessions' }
   # Root
   root 'landing#index'
   get '/g_admin',         to: 'g_admin#index'
