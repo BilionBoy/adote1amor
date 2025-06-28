@@ -2,4 +2,7 @@
 
 class GTipoUsuario < ApplicationRecord
   # Adicione aqui quaisquer métodos ou validações padrão para seus modelos
+  belongs_to :user
+
+  validates :descricao
 end
