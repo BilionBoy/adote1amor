@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore all environment files (except templates).
-/.env
+/.env*
 !/.env*.erb
 
 # Ignore all logfiles and tempfiles.
@@ -16,11 +16,14 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/tmp/cache/bootsnap/*
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
+/tmp/cache/*
+!/tmp/cache/.keep
+
 
 # Ignore storage (uploaded files in development and any SQLite databases).
 /storage/*
@@ -29,10 +32,19 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
-/public/assets
+
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-
 /config/database.yml
+nohup.out
+start.sh
+stop.sh
 .byebug_history
+/coverage/
+Gemfile.lock
+.env
+docker-compose.yml
+/config/environments/production.rb
+
+/config/credentials/development.key
