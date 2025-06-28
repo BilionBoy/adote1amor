@@ -20848,3 +20848,194 @@ Migrating to DeviseCreateUsers (20250627122329)
   [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4332302773520202180)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2025-06-28 10:42:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 77.5ms | GC: 17.0ms)
+Completed 200 OK in 121ms (Views: 81.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 17.0ms)
+
+
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/img/adoteofc.jpeg" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/favicon.ico" for ::1 at 2025-06-28 10:42:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:43:30 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.2ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:43:30 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:43:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:43:55 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.2ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:43:55 -0400
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:43:55 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:43:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:43:56 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:43:56 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:43:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:44:26 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 4.1ms | GC: 0.8ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:44:26 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+Started GET "/img/adoteofc.jpeg" for ::1 at 2025-06-28 10:44:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/img/adoteofc.jpeg"):
+  
+Started GET "/" for ::1 at 2025-06-28 10:45:30 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.html.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered shared/landing/_hero.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/landing/_topbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/landing/_navbar.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.html.erb (Duration: 3.4ms | GC: 0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/lib/owlcarousel/assets/owl.carousel.min.css" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/lib/easing/easing.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/lib/waypoints/waypoints.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/assets/owl.carousel.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/easing/easing.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/waypoints/waypoints.min.js"):
+  
+Started GET "/lib/counterup/counterup.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/lib/owlcarousel/owl.carousel.min.js" for ::1 at 2025-06-28 10:45:30 -0400
+Started GET "/js/main.js" for ::1 at 2025-06-28 10:45:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/lib/counterup/counterup.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/lib/owlcarousel/owl.carousel.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/js/main.js"):
+  
