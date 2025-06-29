@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 class AEspeciesController < ApplicationController
   before_action :set_a_especie, only: %i[show edit update destroy]
-
+  load_and_authorize_resource
   rescue_from ActiveRecord::RecordNotFound, with: :handle_not_found
 
   def index

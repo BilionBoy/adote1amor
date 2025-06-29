@@ -17,24 +17,26 @@
     <!-- Lista de navegação -->
     <ul class="nav flex-column pt-2 px-2" id="sidebar-items">
       <% sidebar_items = [
-        { path: root_path,                   icon: 'ph-house',                 label: 'Home' },
-        { path: root_path,                   icon: 'ph-bookmarks',             label: 'Publicações' },
-        { path: a_especies_path,             icon: 'ph-dog',                   label: 'Espécies' },
-        { path: a_portes_path,               icon: 'ph-align-right',           label: 'Porte' },
-        { path: a_cores_path,                icon: 'ph-paint-brush-household', label: 'Cor' },
-        { path: a_bairros_path,              icon: 'ph-buildings',             label: 'Bairros' },
-        { path: a_estados_path,              icon: 'ph-map-pin',               label: 'Estados' },
-        { path: a_cidades_path,              icon: 'ph-map-pin-line',          label: 'Cidades' },
-        { path: usuarios_g_admin_index_path, icon: 'ph-users',                 label: 'Usuários' }
+       { path: root_path,                   icon: 'ph-house',                 label: 'Home' },
+       { path: root_path,                   icon: 'ph-bookmarks',             label: 'Publicações' },
+       { path: a_especies_path,             icon: 'ph-dog',                   label: 'Espécies',         ability: [:read, AEspecie] },
+       { path: a_portes_path,               icon: 'ph-align-right',           label: 'Porte',            ability: [:read, APorte] },
+       { path: a_cores_path,                icon: 'ph-paint-brush-household', label: 'Cor',              ability: [:read, ACor] },
+       { path: a_bairros_path,              icon: 'ph-buildings',             label: 'Bairros',          ability: [:read, ABairro] },
+       { path: a_estados_path,              icon: 'ph-map-pin',               label: 'Estados',          ability: [:read, AEstado] },
+       { path: a_cidades_path,              icon: 'ph-map-pin-line',          label: 'Cidades',          ability: [:read, ACidade] },
+       { path: usuarios_g_admin_index_path, icon: 'ph-users',                 label: 'Usuários',         ability: [:manage, User] }
       ] %>
       <% sidebar_items.each do |item| %>
-        <li class="nav-item">
-          <%= link_to item[:path],
-            class: "nav-link d-flex align-items-center gap-2 px-3 py-2 rounded text-dark sidebar-link #{current_page?(item[:path]) ? 'active-link' : ''}" do %>
-            <i class="<%= item[:icon] %> text-dark"></i>
-            <span><%= item[:label] %></span>
-          <% end %>
-        </li>
+        <% if item[:ability].nil? || can?(*item[:ability]) %>
+          <li class="nav-item">
+            <%= link_to item[:path],
+        class: "nav-link d-flex align-items-center gap-2 px-3 py-2 rounded text-dark sidebar-link #{current_page?(item[:path]) ? 'active-link' : ''}" do %>
+              <i class="<%= item[:icon] %> text-dark"></i>
+              <span><%= item[:label] %></span>
+            <% end %>
+          </li>
+        <% end %>
       <% end %>
     </ul>
   </div>

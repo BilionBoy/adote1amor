@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 class AAnimaisController < ApplicationController
   before_action :set_a_animal, only: %i[show edit update destroy]
+  load_and_authorize_resource
 
   rescue_from ActiveRecord::RecordNotFound, with: :handle_not_found
 

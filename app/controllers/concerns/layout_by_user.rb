@@ -19,7 +19,7 @@ module LayoutByUser
       when 'ADMIN'
         "application"
       when 'TUTOR'
-        "home_application"
+        "tutor_application"
       else
         "application"
       end
