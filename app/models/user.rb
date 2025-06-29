@@ -10,7 +10,11 @@ class User < ApplicationRecord
   validates :g_tipo_usuario_id, presence: true
 
   def admin?
-    g_tipo_usuario&.nome == 'ADMIN'
+    g_tipo_usuario&.descricao == 'ADMIN'
+  end
+
+  def tutor?
+    g_tipo_usaurio&.descricao == 'TUTOR'
   end
 
     private
@@ -18,7 +22,7 @@ class User < ApplicationRecord
   def set_default_g_tipo_usuario
     return if g_tipo_usuario_id.present?
     
-    cliente_tipo = GTipoUsuario.find_by(nome: 'TUTOR')
+    cliente_tipo = GTipoUsuario.find_by(descricao: 'TUTOR')
     if cliente_tipo
       self.g_tipo_usuario = cliente_tipo
     else

@@ -1,0 +1,54 @@
+<div class="login-image">
+  <div class="row justify-content-center mb-3 " style="padding-top: 70px;">
+  </div>
+  <div class="row justify-content-center mt-5" style="padding-top: 10px; padding-bottom: 50px;">
+    <div class="col-xl-3 col-lg-5 col-md-6 col-sm-8">
+      <div class="card border-0 shadow shadow-sm">
+        <%= simple_form_for(resource, as: resource_name, url: user_registration_path) do |f| %>
+          <div class="card-body">
+            <%= f.error_notification %>
+            <!-- Nome -->
+            <%= f.input :nome, autofocus: true, autocomplete: "nome", class: "form-control" %>
+            <!-- Email -->
+            <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email", class: "form-control" } %>
+            <!-- Senha -->
+            <div class="form-control-feedback form-control-feedback-start">
+              <%= f.input :password, required: true, hint: "#{@minimum_password_length} characters minimum", input_html: { autocomplete: "new-password", class: "password-field form-control" } %>
+              <div class="form-control-feedback-icon">
+                <i class="toggle-password ph-eye mt-4" toggle=".password-field"></i>
+              </div>
+            </div>
+            <!-- Confirmação de Senha -->
+            <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password", class: "password-field form-control" } %>
+            <%= f.association :g_tipo_usuario, collection: GTipoUsuario.all, label_method: :descricao, value_method: :id, prompt: "Selecione o tipo de usuário", input_html: { class: "form-control" } %>
+          </div>
+          <!-- Botão de cadastro -->
+          <div class="card-footer">
+            <%= f.button :submit, "Sign up", class: "btn btn-primary w-100 hand-pointer" %>
+          </div>
+        <% end %>
+        <!-- Links para login e recuperação de senha -->
+        <div class="text-center">
+          <%= render "devise/shared/links" %>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-center">
+    </div>
+  </div>
+</div>
+<script>
+  // Script para mostrar/esconder a senha
+  $('.toggle-password').click(function() {
+    $(this).toggleClass('ph-eye ph-eye-slash');
+    var input = $($(this).attr('toggle'));
+    if (input.attr('type') == 'password') {
+      input.attr('type', 'text');
+    } else {
+      input.attr('type', 'password');
+    }
+  });
+</script>
