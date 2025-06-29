@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_06_28_185039) do
+ActiveRecord::Schema[7.2].define(version: 2025_06_29_084818) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -30,11 +30,13 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_28_185039) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "a_sexo_id", null: false
+    t.bigint "user_id"
     t.index ["a_bairro_id"], name: "index_a_animais_on_a_bairro_id"
     t.index ["a_cor_id"], name: "index_a_animais_on_a_cor_id"
     t.index ["a_especie_id"], name: "index_a_animais_on_a_especie_id"
     t.index ["a_porte_id"], name: "index_a_animais_on_a_porte_id"
     t.index ["a_sexo_id"], name: "index_a_animais_on_a_sexo_id"
+    t.index ["user_id"], name: "index_a_animais_on_user_id"
   end
 
   create_table "a_bairros", force: :cascade do |t|
@@ -168,6 +170,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_28_185039) do
   add_foreign_key "a_animais", "a_especies"
   add_foreign_key "a_animais", "a_portes"
   add_foreign_key "a_animais", "a_sexos"
+  add_foreign_key "a_animais", "users"
   add_foreign_key "a_bairros", "a_cidades"
   add_foreign_key "a_eventos_animais", "a_animais"
   add_foreign_key "a_eventos_animais", "a_status"
