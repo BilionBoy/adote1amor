@@ -31,7 +31,7 @@
         <li class="nav-item">
           <%= link_to item[:path],
             class: "nav-link d-flex align-items-center gap-2 px-3 py-2 rounded text-dark sidebar-link #{current_page?(item[:path]) ? 'active-link' : ''}" do %>
-            <i class="<%= item[:icon] %> text-primary"></i>
+            <i class="<%= item[:icon] %> text-dark"></i>
             <span><%= item[:label] %></span>
           <% end %>
         </li>
